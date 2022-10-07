@@ -1,6 +1,5 @@
 import { Component } from 'react';
 
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -8,38 +7,37 @@ class App extends Component {
     super();
 
     this.state = {
-      name: { firstName: 'Zetra', lastName: 'Orion' },
-      company: 'Wipro',
+      monsters: [
+        {
+          id: 'A000001',
+          name: 'Linda',
+        },
+        {
+          id: 'A000002',
+          name: 'Frank',
+        },
+        {
+          id: 'A000003',
+          name: 'Jacky',
+        },
+        {
+          id: 'A000004',
+          name: 'Andrei',
+        },
+      ],
     };
   }
 
   render() {
     return (
       <div className='App'>
-        <header className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <p>
-            Hello {this.state.name.firstName} {this.state.name.lastName}, I Work
-            at {this.state.company}
-          </p>
-          <button
-            onClick={() => {
-              const firstName =
-                this.state.name.firstName === 'Artez' ? 'Zetra' : 'Artez';
-              this.setState(
-                (state, props) => {
-                  return { name: { firstName: firstName, lastName: 'Orion' } };
-                },
-                () => {
-                  // only when state is updated execute following code. Its a callback function
-                  console.log(this.state);
-                }
-              );
-            }}
-          >
-            Change Name
-          </button>
-        </header>
+        {this.state.monsters.map((monster) => {
+          return (
+            <div key={monster.id}>
+              <h1>{monster.name}</h1>
+            </div>
+          );
+        })}
       </div>
     );
   }
