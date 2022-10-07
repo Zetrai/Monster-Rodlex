@@ -10,4 +10,5 @@ Making App Changes
 =================================================================================
 3. commit-3: Calling open source jsonplacholder API for getting the names of monsters
 5. commit-5: Added Searchbox to filter option. Used .map function and if condition to get the result
+6. commit-6: Added Searchbox to filter option. Used .filter function
 =================================================================================

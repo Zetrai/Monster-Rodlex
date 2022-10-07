@@ -23,6 +23,9 @@ class App extends Component {
   }
 
   render() {
+    const filteredMonsters = this.state.monsters.filter((monster) => {
+      return monster.name.toLocaleLowerCase().includes(this.state.searchTarget);
+    });
     return (
       <div className='App'>
         <input
@@ -30,25 +33,19 @@ class App extends Component {
           type='search'
           placeholder='Search Monsters'
           onChange={(event) => {
+            const searchTarget = event.target.value.toLocaleLowerCase();
+
             this.setState(() => {
-              return { searchTarget: event.target.value };
+              return { searchTarget };
             });
           }}
         />
-        {this.state.monsters.map((monster) => {
-          if (monster.name.toLowerCase().includes(this.state.searchTarget)) {
-            return (
-              <div key={monster.id}>
-                <h1>{monster.name}</h1>
-              </div>
-            );
-          } else if (this.state.searchTarget === '') {
-            return (
-              <div key={monster.id}>
-                <h1>{monster.name}</h1>
-              </div>
-            );
-          }
+        {filteredMonsters.map((monster) => {
+          return (
+            <div key={monster.id}>
+              <h1>{monster.name}</h1>
+            </div>
+          );
         })}
       </div>
     );
