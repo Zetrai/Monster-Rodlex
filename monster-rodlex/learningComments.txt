@@ -7,3 +7,7 @@ Opimization:
     Dont write functions inside render. Instead initialize function and assign it a variable and use that variable to call that 
     function inside render
     Destructuring the state. Assign different variables to different keys in state.
+
+Components should return only one parental html tag and inside that tag, we can have all the html 
+Component are re-rendered when props are changed
+

@@ -5,6 +5,7 @@ Learning Changes
 1. commit-1: Learnt setState and wrote code to understand it.
 2. commit-2: Render same element multiple times using map and why is key used in map.
 4. commit-4: learning LifeCycle
+7. commit-7: Opimizing changes
 =================================================================================
 Making App Changes
 =================================================================================
@@ -12,4 +13,5 @@ Making App Changes
 5. commit-5: Added Searchbox to filter option. Used .map function and if condition to get the result
 6. commit-6: Added Searchbox to filter option. Used .filter function
 7. commit-7: Opimizing changes
+8. commit-8: Creating Folder structures for General Components 
 =================================================================================
