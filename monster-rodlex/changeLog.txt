@@ -4,6 +4,7 @@ Learning Changes
 =================================================================================
 1. commit-1: Learnt setState and wrote code to understand it.
 2. commit-2: Render same element multiple times using map and why is key used in map.
+4. commit-4: learning LifeCycle
 =================================================================================
 Making App Changes
 =================================================================================

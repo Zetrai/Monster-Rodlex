@@ -1,0 +1,4 @@
+Component LifeCycle: 
+Constructor -> Render -> componentDidMount
+
+Strict mode calls the componentDidMount twice but for developement purposes.

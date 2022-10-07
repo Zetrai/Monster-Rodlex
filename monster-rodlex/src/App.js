@@ -9,6 +9,7 @@ class App extends Component {
     this.state = {
       monsters: [],
     };
+    console.log('Constructor');
   }
 
   componentDidMount() {
@@ -24,9 +25,11 @@ class App extends Component {
           }
         )
       );
+    console.log('ComponentDidMount');
   }
 
   render() {
+    console.log('Render');
     return (
       <div className='App'>
         {this.state.monsters.map((monster) => {
