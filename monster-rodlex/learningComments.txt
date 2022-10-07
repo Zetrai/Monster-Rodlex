@@ -2,3 +2,8 @@ Component LifeCycle:
 Constructor -> Render -> componentDidMount
 
 Strict mode calls the componentDidMount twice but for developement purposes.
+
+Opimization:
+    Dont write functions inside render. Instead initialize function and assign it a variable and use that variable to call that 
+    function inside render
+    Destructuring the state. Assign different variables to different keys in state.
