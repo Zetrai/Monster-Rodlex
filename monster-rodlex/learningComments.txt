@@ -20,6 +20,22 @@ UnMounting: componentDidUnmount
 
 Fuctional component doesnt follow same lifecycle but follows same strucutre
 
+Destructuring Array : 
 const arr = [3, 4]
 const [a, b] = arr;
 Now, a = 3, b = 4
+
+Functional component can be pure, impure and both can have side effects. 
+Pure function: returns same value for same parameters always no matter what. 
+Impure function: may return different value for same parameters depending on the code.
+Side effects: are the effects of the functions code being executed. Like changing a variable outside the function.
+
+Functional components uses hooks: 
+useState: This returns an array with the initial value as 1st element and changeFunction as 2nd Element. [initial, changeInitial()]
+useEffect: 
+If any fetch or api calls happens inside functional component without using useEffect hook, it will call it infinite times
+useEffect(()=> {}, [])
+    First is callback that is effect that we want to trigger inside our functional component
+    Second is the dependencies like monsters or any props. 
+    Callback is called only when dependencies inside the array changes. 
+    If dependencies is empty, it will only call once
