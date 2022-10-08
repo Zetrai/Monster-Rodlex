@@ -34,7 +34,7 @@ const App = () => {
     <div className='App'>
       <h1 className='app-title'>Monsters Rodlex</h1>
       <SearchBox
-        className='search-box'
+        className='monster-search-box'
         placeholder='Search Monsters'
         onChangeHandler={onSearchChange}
       />
@@ -43,6 +43,9 @@ const App = () => {
   );
 };
 
+export default App;
+
+// Class Component
 // class App extends Component {
 //   constructor() {
 //     super();
@@ -92,5 +95,3 @@ const App = () => {
 //     );
 //   }
 // }
-
-export default App;
