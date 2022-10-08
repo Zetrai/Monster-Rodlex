@@ -8,6 +8,9 @@ const App = () => {
   const [searchTarget, setSearchTarget] = useState(''); // [value, setValue] useState(initialValue)
   const [monsters, setMonsters] = useState([]);
   const [filteredMonsters, setFilteredMonsters] = useState(monsters);
+  const [title, setTitle] = useState('');
+
+  console.log('rendered');
 
   // First is callback that is effect that we want to trigger inside our functional component
   // Second is the dependencies like monsters or any props
@@ -26,17 +29,27 @@ const App = () => {
   }, [monsters, searchTarget]);
 
   const onSearchChange = (event) => {
-    const searchTargetString = event.target.value.toLocaleLowerCase();
-    setSearchTarget(searchTargetString);
+    const changedString = event.target.value.toLocaleLowerCase();
+    setSearchTarget(changedString);
+  };
+  const onTitleChange = (event) => {
+    const changedString = event.target.value;
+    setTitle(changedString);
   };
 
   return (
     <div className='App'>
-      <h1 className='app-title'>Monsters Rodlex</h1>
+      <h1 className='app-title'>{title}</h1>
       <SearchBox
         className='monster-search-box'
         placeholder='Search Monsters'
         onChangeHandler={onSearchChange}
+      />
+      <br />
+      <SearchBox
+        className='title-search-box'
+        placeholder='Title'
+        onChangeHandler={onTitleChange}
       />
       <CardList monsters={filteredMonsters} />
     </div>

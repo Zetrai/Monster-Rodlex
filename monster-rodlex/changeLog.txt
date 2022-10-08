@@ -2,10 +2,11 @@ changeLog
 =================================================================================
 Learning Changes
 =================================================================================
-1. commit-1: Learnt setState and wrote code to understand it.
-2. commit-2: Render same element multiple times using map and why is key used in map.
-4. commit-4: learning LifeCycle
-7. commit-7: Opimizing changes
+1.  commit-1:  Learnt setState and wrote code to understand it.
+2.  commit-2:  Render same element multiple times using map and why is key used in map.
+4.  commit-4:  learning LifeCycle
+7.  commit-7:  Opimizing changes
+13. commit-13: Dom Paint Flashing
 =================================================================================
 Making App Changes
 =================================================================================

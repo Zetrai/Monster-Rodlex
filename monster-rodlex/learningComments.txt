@@ -39,3 +39,6 @@ useEffect(()=> {}, [])
     Second is the dependencies like monsters or any props. 
     Callback is called only when dependencies inside the array changes. 
     If dependencies is empty, it will only call once
+
+
+Paint flashig: 3 dots-> rendering-> enable paint flashing
