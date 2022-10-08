@@ -14,4 +14,5 @@ Making App Changes
 6. commit-6: Added Searchbox to filter option. Used .filter function
 7. commit-7: Opimizing changes
 8. commit-8: Creating Folder structures for General Components 
+9. commit-9: Adding CSS
 =================================================================================

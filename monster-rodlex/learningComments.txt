@@ -11,3 +11,4 @@ Opimization:
 Components should return only one parental html tag and inside that tag, we can have all the html 
 Component are re-rendered when props are changed
 
+Destructure objects if its value is used multiple times
