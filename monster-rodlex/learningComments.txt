@@ -12,3 +12,14 @@ Components should return only one parental html tag and inside that tag, we can 
 Component are re-rendered when props are changed
 
 Destructure objects if its value is used multiple times
+
+class Component LifeCycle:
+Mounting: constructor -> render -> react updates DOM and refs -> componentDidMount
+Updating: New props, setState(), forceUpdate() -> render -> react updates DOM and refs -> componentDidUpdate
+UnMounting: componentDidUnmount
+
+Fuctional component doesnt follow same lifecycle but follows same strucutre
+
+const arr = [3, 4]
+const [a, b] = arr;
+Now, a = 3, b = 4
